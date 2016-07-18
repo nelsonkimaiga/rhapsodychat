@@ -13,6 +13,24 @@
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
     <script src="js/vendor/jquery.js"></script>
   </head>
+  <!--form validation-->
+  <script type="text/javascript">
+            function validateForm(){
+                var x = document.forms["chatForm"]["chatroom"].value;
+                var m = document.forms["chatForm"]["message"].value;
+                
+                if (x == null || x == "") {
+                    alert("Chat Room must be selected");
+                    return false;
+                }
+                
+                if (m==null || m == ""){
+                    alert("message must be filled out");
+                    return false;
+                }
+                return true;
+            }
+        </script>
   <body>
       <div class="container">
           <nav class="nav ">
@@ -36,7 +54,7 @@
          </nav>
           <div class="row bodycontent">
               <div class="large-6 large-centered columns">
-                  <form name="chatForm" id="chatform"method="POST">
+                  <form name="chatForm" id="chatform" method="" onsubmit="return validateForm()">
                       <p id="contact-success" class="text-success lead"></p>
                       <p id="contact-error" class="text-danger lead"></p>
                       <fieldset>
