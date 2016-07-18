@@ -1,0 +1,86 @@
+html,
+body {
+    font-family: 'Raleway', serif;
+    background:  #143D52;
+    /*background: grey;*/
+    color: #666;
+    text-align: center;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.6em;
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+    font-family: 'Raleway', serif;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+.nav{
+    background: #ffffff;
+    min-height: 50px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+.nav .left{
+    float: left;
+    margin-left: 0;
+}
+.nav .left li{
+    font-size: 14px;
+    float: left;
+}
+.nav .left li a{
+    display: block;
+    padding: 9px 15px;
+    line-height: 30px;
+}
+.nav .left li a:hover{
+    background: #f2f2f2;
+}
+
+.nav .right{
+    float: right;
+    margin-right: 0;
+}
+.nav .right li{
+    font-size: 14px;
+    float: left;
+}
+.nav .right li a{
+    display: block;
+    padding: 9px 15px;
+    line-height: 30px;
+}
+.nav .right li a:hover{
+    background: #f2f2f2;
+}
+
+.toggle-nav{
+    display: none;
+}
+
+.nav-mobile style{
+    display: block;
+}
+
+ul{
+    list-style-type: none;
+}
+/*********NAV BAR END**********/
