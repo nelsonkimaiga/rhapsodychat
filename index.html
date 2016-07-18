@@ -15,26 +15,42 @@
   </head>
   <body>
       <div class="container">
-            <nav class="nav ">
-                <div class="nav-center">
-                    <a class="toggle-nav" href="#">&#9776;</a>
-                    <div class="nav-mobile">
-                        <ul class="left">
-                            <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
-                            <li><a href=""><i class="fa fa-book"></i>lol</a></li>
-                            <li><a href=""><i class="fa fa-fire"></i>ahaha</a></li>
-                        </ul>
-                        <ul class="right">
-                            <li>
-                                <a href="#"><i class="fa fa-user"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-envelope"></i></a>
-                            </li>
-                        </ul>
+          <nav class="nav ">
+              <div class="nav-center">
+                  <a class="toggle-nav" href="#">&#9776;</a>
+                  <div class="nav-mobile">
+                      <ul class="left">
+                          <li><a href="#"><i class="fa fa-home"></i>Home</a></li>
+                          <li><a href=""><i class="fa fa-fire"></i></a></li>
+                      </ul>
+                      <ul class="right">
+                          <li>
+                              <a href="#"><i class="fa fa-user"></i></a>
+                          </li>
+                          <li>
+                              <a href="#"><i class="fa fa-envelope"></i></a>
+                          </li>
+                      </ul>
                     </div>
                 </div>
-            </nav>
+         </nav>
+          <div class="row bodycontent">
+              <div class="large-6 large-centered columns">
+                  <form name="chatForm" id="chatform"method="POST">
+                      <p id="contact-success" class="text-success lead"></p>
+                      <p id="contact-error" class="text-danger lead"></p>
+                      <fieldset>
+                          <select name="chatroom">
+                              <option value="staff">Staff</option>
+                          </select>
+                      </fieldset>
+                      <fieldset>
+                          <input type="text" name="message" placeholder="Chat Message">
+                      </fieldset>
+                      <button class="button secondary" type="submit" id="send-chat">Submit</button>
+                  </form>
+              </div>
+          </div>
       </div>
 
    

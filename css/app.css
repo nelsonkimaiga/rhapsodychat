@@ -153,3 +153,11 @@ ul{
     }
 }
 /*********MEDIA QUERY END**********/
+
+.bodycontent{
+    margin-top: 70px;
+    color: #ffffff;
+    font-family: 'Raleway', serif;
+    text-align: center;
+    
+}
